@@ -1,6 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript">document.querySelector('form').addEventListener('submit',function(e){
+		e.preventDefault()
+		const checkMessage = document.querySelector('#messaging').value
+		const checkEmail = document.querySelector('#email').value
+		const document = document.querySelector('#username').value
+		const charsValidator = /^[A-Za-z]+$/;
+		const validate2 = /^[0-9]+$/;
+		if(check.length >= 4 && check.match(charsValidator) && checkMessage.length >= 20 && !checkMessage.match
+		(validate2) && CheckEmail.includes('@)){
+			const Success = document.querySelector('#successmessage')
+			Success.style.display = 'block';
+		
+		}
+		else {
+			const createNew = document.createElement('p')
+			createNew.textContent = 'minimum of four characters required in the name field, least of twenty
+			Characters required in the message field and alphabets in all fields';
+			document.querySelector('.error').appendChild(createNew);
+			createNew.style.backgroundColour = 'red';
+			createNew.style.textAlign = 'centre';
+			document.querySelector('input').addEventListener('click', function(){
+				return createNew.remove()
+			})
+		}
+		
+		
+		
+		})
+		</script>
+		<style type="">
+h1{
+	margin: 5px;
+	border: 5px;
+	padding: 0px;
+	font-family:Calibri;
+	font-size: 20px;	
+}
+
+h2{
+	margin: 5px;
+	border: 10px;
+	padding: 0px;
+	font-family: Calibri;
+	font-size: 15px;
+	color: #084466;
+}
+h3{
+	margin: 5px;
+	border: 0px;s
+	padding: 0px;
+	font-family: Calibri;
+	font-size: 14px;
+	color: #084466;
+}
+table{
+	width: 100%;
+	padding: 10px;
+}
+
+img{
+	padding-right: 5px;
+}
+.jibz{
+	color: #084466;
+	font-family: calibri;
+}
+.tan{
+	color: black;
+	font-family: calibri;
+}
+.kash{
+	color: grey;
+	font-family: calibri;
+}
+
+ul{
+	list-style-type: none;
+}
+
+table{
+
+}
+
+.box-1 {
+background-color: #084466;
+
+}
+
+.box-2{
+	background: #084466;
+	border-radius: 15px;
+}
+li{
+	color: white;
+	font-family: calibri;
+
+}
+
+.sola{
+	color: white;
+	font-family: calibri;
+}
+
+tr.sola{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: #084466;
+}
+
+a:hover{
+	color:pink;
+}
+a: active{
+	color: green;
+
+}
+
+a:visited{
+	color: green;
+}
+
+.form li{
+	padding-bottom: 8px;
+	border-bottom: dotted 1px #084466;
+	list-style-image: url('../images/fresh.png')
+}  
+.tall{
+	border: dotted
+
+}
+
+.funsh{
+	padding: 20px;
+}
+
+.funsh.funsh-group{
+	padding-bottom: 15px;
+}
+
+.funsh label{
+	display: block;
+}
+
+.funsh input[type="text"], .funsh textarea{
+	padding: 8px
+	width:100%;
+}
+
+.funsh input[type="submit"]
+
+
+.form{
+	border: 1px #084466
+	border-block-color: #084466;
+	padding: 10px
+	border-radius:15px;
+}
+.form h2{
+	text-align: center;
+}</style>
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -276,6 +439,65 @@
 				<br>
 				<h1 class="jibz">REFERENCES</h1>
 				<h2 class="tan">Prof. Jamiu Busari – jobusar@gmail.com	<br>	Prof. Olugbenro Sodeinde – gmgbs@hotmail.com</h2>
+				<br>
+				<br>
+				<br>
+				<h1 class="jibz">CONTACT ME</h1>
+
+				
+				<div>
+					<h2 class="form">FORM</h2>
+					<a href="">Click Form</a>
+				</div>
+
+				<form class="funsh">
+					<div class="form-group">
+						
+				
+					<br>
+					<hr>
+					<br>
+					<div class="funsh-group">
+						<label>Name:</label>
+						<input type="text" name="name">
+					</div>
+					<br>
+					<hr>
+					<br>
+					<div class="funsh-group">
+						<label>Email:</label>
+						<input type="text" name="email">
+					</div>
+					<br>
+					<hr>
+					<br>
+
+					<div>
+									
+						<label>Title</label>
+						<select name="Title">
+							<option value="Mr."> Mr.</option>
+							<option value="Mrs.">Mrs.</option>
+							<option value="Miss">Miss.</option>
+							<option value="Dr.">Dr.</option>
+							<option value="other"> other</option>
+						</select>
+				</div>
+				<br>
+				<br>
+						<div class="funsh-group">
+						<label>Message:</label>
+						<textarea name="message"></textarea>
+						<br>
+						<hr>
+						<br>
+						<input class="funsh input" type="submit" value="Submit" name=""> 
+					</div>
+
+				</form>
+				
+				<div> </div>
+				
 				
 				
 				

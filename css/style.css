@@ -64,5 +64,71 @@ background-color: #084466;
 li{
 	color: white;
 	font-family: calibri;
+
 }
 
+.sola{
+	color: white;
+	font-family: calibri;
+}
+
+tr.sola{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: #084466;
+}
+
+a:hover{
+	color:pink;
+}
+a: active{
+	color: green;
+
+}
+
+a:visited{
+	color: green;
+}
+
+.form li{
+	padding-bottom: 8px;
+	border-bottom: dotted 1px #084466;
+	list-style-image: url('../images/fresh.png')
+}  
+.tall{
+	border: dotted
+
+}
+
+.funsh{
+	padding: 20px;
+}
+
+.funsh.funsh-group{
+	padding-bottom: 15px;
+}
+
+.funsh label{
+	display: block;
+}
+
+.funsh input[type="text"], .funsh textarea{
+	padding: 8px
+	width:100%;
+}
+
+.funsh input[type="submit"]
+
+
+.form{
+	border: 1px #084466
+	border-block-color: #084466;
+	padding: 10px
+	border-radius:15px;
+}
+.form h2{
+	text-align: center;
+}
